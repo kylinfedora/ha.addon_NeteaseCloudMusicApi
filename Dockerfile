@@ -9,5 +9,6 @@ RUN git clone git@github.com:Binaryify/NeteaseCloudMusicApi.git && \
     npm install
 
 ENV LANG C.UTF-8
+ENV TZ=Asia/Shanghai
 EXPOSE map[3000/tcp:{}]
 CMD [ "node app.js" ]
